@@ -28,3 +28,9 @@ CREATE TABLE sys_action_asgr_mm (
   KEY uid_foreign (uid_foreign)
 );
 
+#
+# Add createdByAction field to table 'be_users'
+#
+CREATE TABLE be_users (
+	createdByAction smallint(1) unsigned NOT NULL DEFAULT '0'
+);
